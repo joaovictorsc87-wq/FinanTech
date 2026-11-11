@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas Financeiras - FinanTech</title>
+    <link rel="stylesheet" href="styleMETAS.css">
+</head>
+
+<body>
+
+    <header>
+        <section class="inicio">
+
+            <a href="index.html" class="logo">
+                <img src="img/logo FINANTECH.png" alt="Logo FinanTech">
+                <h1>FinanTech</h1>
+            </a>
+
+
+            <nav class="nav">
+                <a href="index.html">Início</a>
+                <a href="minhasfinanças.html" >Minhas Finanças</a>
+                <a href="possocomprar.html">Posso Comprar?</a>
+                <a href="EducaçãoFinanceira.html">Educação Financeira</a>
+                <a href="metas.html" class="active">Metas</a>
+            </nav>
+        </section>
+
+        <section id="acoes-usuario" class="botoes acoes-usuario">
+            <a href="loginEntrar.html">
+                <button>Entrar</button>
+            </a>
+
+            <a href="loginCadastrar.html">
+                <button class="cadastrar">Cadastrar</button>
+            </a>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="apresentacao">
+            <p>SEU FUTURO COMEÇA AGORA</p>
+            <h1>Metas Financeiras</h1>
+            <h2>Planeje hoje. Conquiste amanhã.</h2>
+            <p class="descricao">
+                Organize seus objetivos, acompanhe seu progresso
+                e tenha mais controle sobre suas conquistas financeiras.
+            </p>
+
+            <section class="imagem-hero">
+                <img src="img/yasmim atualizada.png" alt="yasmim">
+            </section>
+            
+        </section>
+
+        <section class="conteudo">
+            <section class="visao-geral">
+
+                <p class="subtitulo">ACOMPANHE SEU PROGRESSO</p>
+                <h2>Visão geral</h2>
+
+                <section class="indicadores">
+
+                    <article class="indicador">
+                        <h3>Total das metas</h3>
+                        <p id="total-metas">0</p>
+                    </article>
+
+                    <article class="indicador">
+                        <h3>Valor acumulado</h3>
+                        <p id="valor-acumulado">R$ 0,00</p>
+                    </article>
+
+                    <article class="indicador">
+                        <h3>Progresso geral</h3>
+                        <p id="progresso-geral">0%</p>
+                    </article>
+
+                    <article class="indicador">
+                        <h3>Metas ativas</h3>
+                        <p id="metas-ativas">0</p>
+                    </article>
+
+                </section>
+            </section>
+
+            <section class="minhas-metas">
+                <section class="titulo-metas">
+                    <div>
+                        <h2>Minhas metas</h2>
+                        <p>Acompanhe todos os seus objetivos financeiros.</p>
+                    </div>
+
+                    <button type="button" id="adicionar-meta">
+                        Adicionar nova meta
+                    </button>
+                </section>
+
+                <section id="lista-metas">
+                    <article class="meta">
+
+                        <header class="cabecalho-meta">
+                            <div>
+                                <h3>Minha primeira meta</h3>
+                                <p>Comece a planejar seu objetivo.</p>
+                            </div>
+
+                            <button type="button">Opções</button>
+                        </header>
+
+                        <div class="progresso-meta">
+                            <p>Progresso</p>
+                            <progress value="0" max="100"></progress>
+                            <span>0%</span>
+                        </div>
+
+                        <section class="informacoes-meta">
+
+                            <div>
+                                <p>Valor atual</p>
+                                <h4>R$ 0,00</h4>
+                            </div>
+
+                            <div>
+                                <p>Valor objetivo</p>
+                                <h4>R$ 0,00</h4>
+                            </div>
+
+                            <div>
+                                <p>Prazo</p>
+                                <h4>Não definido</h4>
+                            </div>
+
+                        </section>
+                    </article>
+                </section>
+            </section>
+
+            <section class="adicionar">
+                <h2>Adicionar meta</h2>
+                <form id="form-meta">
+
+                    <div>
+                        <label for="nome-meta">Nome da meta</label>
+                        <input type="text" id="nome-meta" name="nome-meta" placeholder="Digite o nome da meta" required>
+                    </div>
+
+                    <div>
+                        <label for="valor-meta">Valor desejado</label>
+                        <input type="number" id="valor-meta" name="valor-meta" placeholder="R$ 0,00" min="0.01"
+                            step="0.01" required>
+                    </div>
+
+                    <div>
+                        <label for="valor-inicial">Valor inicial</label>
+                        <input type="number" id="valor-inicial" name="valor-inicial" placeholder="R$ 0,00" min="0"
+                            step="0.01">
+                    </div>
+
+                    <div>
+                        <label for="prazo-meta">Prazo</label>
+                        <input type="date" id="prazo-meta" name="prazo-meta">
+                    </div>
+
+                    <div>
+                        <label for="categoria-meta">Categoria</label>
+
+                        <select id="categoria-meta" name="categoria-meta">
+                            <option value="">Selecione uma categoria</option>
+                            <option value="pessoal">Pessoal</option>
+                            <option value="casa">Casa</option>
+                            <option value="viagem">Viagem</option>
+                            <option value="investimento">Investimento</option>
+                            <option value="emergencia">Emergência</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-descricao">
+                        <label for="descricao-meta">Descrição</label>
+                        <textarea id="descricao-meta" name="descricao-meta"
+                            placeholder="Adicione uma descrição para sua meta">
+                        </textarea>
+                    </div>
+
+                    <div class="botoes-formulario">
+                        <button type="reset" class="cancelar">
+                            Cancelar
+                        </button>
+
+                        <button type="submit" class="salvar">
+                            Salvar meta
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="financeiro">
+                <h2>Progresso financeiro</h2>
+                <section class="painel-financeiro">
+
+                    <article class="painel">
+                        <h3>Progresso das metas</h3>
+                        <div id="grafico-progresso"></div>
+                    </article>
+
+                    <article class="painel">
+                        <h3>Próximos prazos</h3>
+                        <ul id="proximos-prazos"></ul>
+                    </article>
+
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Copyright FinanTech 2026 || Senac-RN || MedioTec-Mossoró
+        </p>
+    </footer>
+
+    <script src="metas.js"></script>
+</body>
+
+</html>

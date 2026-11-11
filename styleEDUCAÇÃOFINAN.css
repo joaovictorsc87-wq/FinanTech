@@ -1,0 +1,442 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F0FDF4;
+    color: #0B1F17;
+    overflow-x: hidden;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #071d14;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* CABEÇALHO */
+
+header {
+    width: 100%;
+    padding: 15px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #BBF7D0;
+
+    position: relative;
+    z-index: 10;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.inicio h1 {
+    color: #0B1F17;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0B1F17;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #16A34A;
+}
+
+/* BOTÕES DO CABEÇALHO */
+
+header button {
+    padding: 9px 22px;
+
+    border-radius: 8px;
+    border: 2px solid #16A34A;
+
+    background-color: #FFFFFF;
+    color: #166534;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+header button:hover {
+    background-color: #DCFCE7;
+}
+
+header .cadastrar {
+    background-color: #16A34A;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+header .cadastrar:hover {
+    background-color: #166534;
+}
+
+.acoes-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.usuario-logado {
+    color: #14532D;
+    font-weight: bold;
+}
+
+header button.sair {
+    margin-left: 0;
+    background-color: #16A34A;
+    color: #FFFFFF;
+}
+
+header button.sair:hover {
+    background-color: #166534;
+}
+
+/* APRESENTAÇÃO */
+
+.telaaa {
+    min-height: 480px;
+    width: 100%;
+
+    padding: 45px 8%;
+
+    background-color: #14532D;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.tela {
+    width: 65%;
+    max-width: 850px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.tela > p:first-child {
+    color: #BBF7D0;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.tela h1 {
+    font-size: 46px;
+
+    color: #FFFFFF;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+.tela .telaa {
+    color: #FFFFFF;
+}
+
+#frase {
+    max-width: 620px;
+
+    margin-top: 20px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #E2F5E9;
+}
+
+/* CONTEÚDO DOS LIVROS */
+
+.conteudo {
+    background-color: #F0FDF4;
+
+    padding: 60px 5% 80px;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.subtitulo {
+    color: #16A34A;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.conteudo > h1 {
+    font-size: 30px;
+
+    color: #14532D;
+
+    margin-bottom: 25px;
+}
+
+/* CARDS */
+
+.card {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+    flex-wrap: wrap;
+}
+
+/* ITEM */
+
+.item {
+    width: 250px;
+
+    padding: 25px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #BBF7D0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* IMAGEM DO LIVRO */
+
+.item img {
+    width: 150px;
+    height: 210px;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+}
+
+/* TÍTULO */
+
+.item h3 {
+    color: #0B5D3B;
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+/* DESCRIÇÃO */
+
+.item p {
+    color: #475569;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+/* PREÇO OU AUTOR */
+
+.item h4 {
+    color: #16A34A;
+
+    font-size: 15px;
+
+    margin-top: auto;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #F0FDF4;
+
+    padding: 30px 5% 40px;
+
+    text-align: center;
+
+    border-top: 1px solid #BBF7D0;
+}
+
+footer h3 {
+    color: #14532D;
+
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1100px) {
+
+    header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .inicio {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .tela {
+        width: 85%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    header {
+        justify-content: center;
+    }
+
+    .inicio {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .telaaa {
+        min-height: 380px;
+        padding: 45px 6%;
+    }
+
+    .tela {
+        width: 100%;
+    }
+
+    .tela h1 {
+        font-size: 34px;
+    }
+
+    #frase {
+        font-size: 15px;
+    }
+
+    .conteudo > h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .tela h1 {
+        font-size: 29px;
+    }
+
+    .item {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    footer h3 {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+.imagem-hero {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    bottom: 0;
+
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+    z-index: 1;
+}
+
+.imagem-hero img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center 15%;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.35) 10%,
+        #000 25%,
+        #000 100%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.35) 10%,
+        #000 25%,
+        #000 100%
+    );
+}
+
+.nav a.active {
+    color: #16A34A;
+    font-weight: bold;
+    border-bottom: 3px solid #16A34A;
+    padding-bottom: 8px;
+}

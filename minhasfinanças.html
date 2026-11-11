@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Finanças - FinanTech</title>
+    <link rel="stylesheet" href="styleFINANCIAS.css">
+</head>
+
+<body>
+
+    <header class="header-principal">
+
+        <div class="logo-area">
+            <img src="img/logo FINANTECH.png" class="logo" alt="Logo FinanTech">
+            <h1>FinanTech</h1>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Início</a>
+            <a href="minhasfinanças.html" class="active">Minhas Finanças</a>
+            <a href="possocomprar.html">Posso Comprar?</a>
+            <a href="EducaçãoFinanceira.html">Educação Financeira</a>
+            <a href="metas.html">Metas</a>
+        </nav>
+
+        <div class="botoes-auth">
+            <a href="loginEntrar.html">
+                <button>Entrar</button>
+            </a>
+
+            <a href="loginCadastrar.html">
+                <button class="cadastrar">Cadastrar</button>
+            </a>
+        </div>
+
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section class="banner-boas-vindas">
+
+            <div class="banner-texto">
+
+                <span>SEU DINHEIRO, NO SEU CONTROLE</span>
+
+                <h1>
+                    Organize seu dinheiro.<br>
+                    Tome as melhores decisões.<br>
+                    Construa seu futuro.
+                </h1>
+
+                <p>
+                    Gerencie suas entradas, saídas e acompanhe
+                    sua saúde financeira mês a mês.
+                </p>
+
+            </div>
+
+            <div class="banner-imagem">
+                <img src="img/Jarmonio.png" alt="Finanças">
+            </div>
+
+        </section>
+
+        <section class="grid-cards">
+
+            <div class="card">
+                <label for="saldo">Digite seu saldo inicial:</label>
+                <input type="number" id="saldo" placeholder="R$ 00,00">
+            </div>
+
+            <div class="card">
+                <label for="receita">Receita do mês</label>
+                <input type="number" id="receita" placeholder="R$ 00,00">
+            </div>
+
+            <div class="card">
+                <label for="despeza">Despesa do Mês</label>
+                <input type="number" id="despeza" placeholder="R$ 00,00">
+            </div>
+
+            <div class="card">
+                <label for="poupanca">Taxa de poupança:</label>
+                <input type="number" id="poupanca" placeholder="00,0%">
+            </div>
+
+        </section>
+
+        <section class="grid-painel">
+
+            <div class="painel-formulario">
+
+                <h2>NOVO LANÇAMENTO</h2>
+
+                <label for="despesa-nome">Despesas</label>
+                <input type="text" id="despesa-nome" placeholder="Nome da despesa">
+
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" placeholder="Ex: Lanche, Uber, Salário">
+
+                <label for="valor">Valor</label>
+                <input type="number" id="valor" placeholder="R$ 00,00">
+
+                <label for="categoria">Categoria da meta:</label>
+
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione uma categoria</option>
+                    <option value="pessoal">Pessoal</option>
+                    <option value="casa">Casa</option>
+                    <option value="viagem">Viagem</option>
+                    <option value="investimento">Investimento</option>
+                    <option value="emergencia">Emergência</option>
+                    <option value="outros">Outros</option>
+                    <option value="alimentacao">Alimentação</option>
+                </select>
+
+            </div>
+
+            <div class="painel-grafico">
+
+                <h2>DISTRIBUIÇÃO DE GASTOS POR CATEGORIA</h2>
+
+                <p>Acompanhe onde o seu dinheiro está sendo aplicado.</p>
+
+                <img src="img/Painel de Gastos por Categoria.png" alt="Gráfico Demonstrativo">
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

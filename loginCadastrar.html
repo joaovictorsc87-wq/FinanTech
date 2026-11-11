@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanTech</title>
+</head>
+<link rel="stylesheet" href="styleCADASTRAR.css">
+
+<body>
+    <header>
+
+        <section class="inicio">
+            <a href="index.html" class="logo">
+                <img src="img/logo FINANTECH.png" alt="Logo FinanTech">
+                <h1>FinanTech</h1>
+            </a>
+
+            <nav class="nav">
+                <a href="index.html">Início</a>
+                <a href="minhasfinanças.html">Minhas Finanças</a>
+                <a href="possocomprar.html">Posso Comprar?</a>
+                <a href="EducaçãoFinanceira.html">Educação Financeira</a>
+                <a href="metas.html">Metas</a>
+            </nav>
+        </section>
+        <section id="acoes-usuario" class="acoes-usuario">
+            <a href="loginEntrar.html">
+                <button>Entrar</button>
+            </a>
+            <a href="loginCadastrar.html">
+                <button class="cadastrar">Cadastrar</button>
+            </a>
+        </section>
+    </header>
+
+    <section class="login">
+        <h2>Seja bem vindo!</h2>
+        <h3>Escolha uma opções a seguir</h3>
+        <form method="POST" action="api/login">
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" name="mail" />
+            <br />
+            <label for="usuario">Nome de usuário:</label>
+            <input type="text" id="usuario" name="usuario" />
+            <br />
+            <label for="pw">Crie uma senha: </label>
+            <input type="password" id="pw" name="pw" />
+            <br />
+            <input type="submit" value="Cadastrar-se" />
+            <br />
+        </form>
+
+    </section>
+    <script src="script.js"></script>
+    <script src="loginCADASTRO.js"></script>
+</body>
+
+</html>

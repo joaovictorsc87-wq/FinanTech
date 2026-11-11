@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F0FDF4;
+    color: #0B1F17;
+    overflow-x: hidden;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #071d14;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header {
+    width: 100%;
+    padding: 15px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #BBF7D0;
+
+    position: relative;
+    z-index: 10;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.inicio h1 {
+    color: #0B1F17;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0B1F17;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #16A34A;
+}
+
+header button {
+    padding: 9px 22px;
+
+    border-radius: 8px;
+    border: 2px solid #16A34A;
+
+    background-color: #FFFFFF;
+    color: #166534;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+header button:hover {
+    background-color: #DCFCE7;
+}
+
+header .cadastrar {
+    background-color: #16A34A;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+header .cadastrar:hover {
+    background-color: #166534;
+}
+
+.acoes-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.usuario-logado {
+    color: #14532D;
+    font-weight: bold;
+}
+
+header button.sair {
+    margin-left: 0;
+    background-color: #16A34A;
+    color: #FFFFFF;
+}
+
+header button.sair:hover {
+    background-color: #166534;
+}
+
+.mensagem-boas-vindas {
+    margin: 0;
+    padding: 12px 5%;
+    background-color: #DCFCE7;
+    border-bottom: 1px solid #BBF7D0;
+    color: #14532D;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.telaaa {
+    min-height: 480px;
+    width: 100%;
+
+    padding: 45px 8%;
+
+    background-color: #14532D;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.tela {
+    width: 48%;
+    max-width: 750px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.tela > p:first-child {
+    color: #BBF7D0;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.tela h1 {
+    font-size: 46px;
+
+    color: #FFFFFF;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+.tela .telaa {
+    color: #FFFFFF;
+}
+
+#frase {
+    max-width: 620px;
+
+    margin-top: 20px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #E2F5E9;
+}
+
+.botoesprinc {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.botoesprinc button {
+    padding: 12px 25px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    border: none;
+
+    transition: 0.3s;
+}
+
+.botoesprinc h4 {
+    font-size: 16px;
+}
+
+.comecar {
+    background-color: #22C55E;
+    color: #FFFFFF;
+}
+
+.comecar:hover {
+    background-color: #15803D;
+    transform: translateY(-3px);
+}
+
+.projeto {
+    background-color: #FFFFFF;
+
+    border: 2px solid #FFFFFF !important;
+
+    color: #166534;
+}
+
+.projeto:hover {
+    background-color: #DCFCE7;
+    transform: translateY(-3px);
+}
+
+.imagem-hero {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+.imagem-hero img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.35) 10%,
+        #000 25%,
+        #000 100%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.35) 10%,
+        #000 25%,
+        #000 100%
+    );
+}
+
+footer {
+    background-color: #F0FDF4;
+
+    padding: 60px 5% 40px;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+footer > p {
+    color: #16A34A;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+footer > h1 {
+    font-size: 30px;
+
+    color: #14532D;
+
+    margin-bottom: 25px;
+}
+
+.card {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 250px;
+
+    padding: 25px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #BBF7D0;
+}
+
+.item h3 {
+    color: #0B5D3B;
+
+    margin-bottom: 15px;
+}
+
+.item p {
+    color: #475569;
+
+    line-height: 1.5;
+}
+
+
+.nav a.active {
+    color: #16A34A;
+    font-weight: bold;
+    border-bottom: 3px solid #16A34A;
+    padding-bottom: 8px;
+}
+
+
+/* RESPONSIVIDADE */
+
+/* NOTEBOOKS */
+
+@media (max-width: 1200px) {
+    header {
+        padding: 15px 3%;
+        gap: 15px;
+    }
+
+    .inicio {
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    header button {
+        padding: 9px 15px;
+    }
+
+    .telaaa {
+        padding: 45px 5%;
+    }
+
+    .tela h1 {
+        font-size: 40px;
+    }
+
+    .tela {
+        width: 50%;
+    }
+
+    .imagem-hero {
+        width: 50%;
+    }
+}
+
+/* TABLETS */
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 4%;
+    }
+
+    .inicio {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .acoes-usuario {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .telaaa {
+        min-height: 420px;
+        padding: 50px 5%;
+    }
+
+    .tela {
+        width: 60%;
+    }
+
+    .tela h1 {
+        font-size: 35px;
+    }
+
+    #frase {
+        font-size: 15px;
+    }
+
+    .imagem-hero {
+        width: 45%;
+    }
+
+    .card {
+        gap: 20px;
+    }
+
+    .item {
+        width: 45%;
+        max-width: 300px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px 4%;
+        gap: 15px;
+    }
+
+    .inicio {
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .logo h1,
+    .inicio h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 12px;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .nav a.active {
+        padding-bottom: 4px;
+        border-bottom-width: 2px;
+    }
+
+    .acoes-usuario {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .acoes-usuario a {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .acoes-usuario button {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .acoes-usuario a button {
+        width: 100%;
+    }
+
+    header .cadastrar {
+        margin-left: 0;
+    }
+
+    .usuario-logado {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .mensagem-boas-vindas {
+        padding: 12px 4%;
+        font-size: 13px;
+    }
+
+    .telaaa {
+        min-height: auto;
+        padding: 45px 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tela {
+        width: 100%;
+        max-width: 100%;
+        z-index: 2;
+    }
+
+    .tela > p:first-child {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .tela h1 {
+        font-size: 30px;
+        line-height: 1.3;
+        letter-spacing: 0;
+    }
+
+    #frase {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 18px;
+    }
+
+    .botoesprinc {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .botoesprinc button {
+        padding: 12px 18px;
+    }
+
+    .botoesprinc h4 {
+        font-size: 14px;
+    }
+
+    .imagem-hero {
+        position: relative;
+        width: 100%;
+        height: 230px;
+        margin-top: 30px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .imagem-hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    footer {
+        padding: 40px 5% 30px;
+    }
+
+    footer > p {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    footer > h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .item {
+        width: 100%;
+        max-width: 400px;
+        padding: 22px;
+    }
+
+    .item h3 {
+        font-size: 18px;
+    }
+
+    .item p {
+        font-size: 14px;
+    }
+}
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 360px) {
+    .logo h1,
+    .inicio h1 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 9px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .tela h1 {
+        font-size: 26px;
+    }
+
+    #frase {
+        font-size: 13px;
+    }
+
+    .botoesprinc {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .botoesprinc button {
+        width: 100%;
+    }
+
+    .imagem-hero {
+        height: 190px;
+    }
+
+    footer > h1 {
+        font-size: 22px;
+    }
+
+    .item {
+        padding: 18px;
+    }
+}

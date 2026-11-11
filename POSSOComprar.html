@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posso Comprar? - FinanTech</title>
+    <link rel="stylesheet" href="stylePOSSOComprar.css">
+</head>
+
+<body>
+    <header>
+        <section class="inicio">
+            <a href="index.html" class="logo">
+                <img src="img/logo FINANTECH.png" alt="Logo FinanTech">
+                <h1>FinanTech</h1>
+            </a>
+
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="minhasfinanças.html">Minhas Finanças</a>
+                <a href="possoComprar.html">Posso Comprar?</a>
+                <a href="EducaçãoFinanceira.html">Educação Financeira</a>
+                <a href="metas.html">Metas</a>
+            </nav>
+        </section>
+
+        <section class="acoes-usuario">
+            <a href="loginEntrar.html">
+                <button>Entrar</button>
+            </a>
+            <a href="loginCadastrar.html">
+                <button class="cadastrar">Cadastrar</button>
+            </a>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="apresentacao">
+
+            <div class="apresentacao-conteudo">
+                <p class="subtitulo">COMPRE COM CONSCIÊNCIA</p>
+        
+                <h1>Posso Comprar?</h1>
+        
+                <h2>Planeje antes. Compre com segurança.</h2>
+        
+                <p class="descricao">
+                    Descubra se uma compra cabe no seu orçamento,
+                    analise suas despesas e tome decisões financeiras
+                    mais conscientes.
+                </p>
+            </div>
+        
+            <div class="apresentacao-imagem">
+                <img src="img/thainá atualizado.png" alt="Mulher representando educação financeira">
+            </div>
+        
+        </section>
+        
+
+        <section class="conteudo">
+            <section class="simulador">
+                <h2>Simule sua compra</h2>
+                <p>Preencha os campos para analisar seu orçamento.</p>
+
+                <form id="form-compra">
+                    <div class="campo">
+                        <label for="produto">Nome do produto</label>
+                        <input type="text" id="produto"
+                            placeholder="Ex: Notebook" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="preco">Preço do produto (R$)</label>
+                        <input type="number" id="preco"
+                            placeholder="0,00" min="0.01" step="0.01" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="saldo">Dinheiro disponível (R$)</label>
+                        <input type="number" id="saldo"
+                            placeholder="0,00" min="0" step="0.01" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="despesas">Despesas pendentes (R$)</label>
+                        <input type="number" id="despesas"
+                            placeholder="0,00" min="0" step="0.01" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="reserva">Reserva que deseja manter (R$)</label>
+                        <input type="number" id="reserva"
+                            placeholder="0,00" min="0" step="0.01" required>
+                    </div>
+
+                    <div class="botoes">
+                        <button type="reset" class="limpar">Limpar</button>
+                        <button type="submit" class="analisar">Analisar compra</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="resultado" id="resultado" hidden>
+                <h2>Resultado da análise</h2>
+                <h3 id="mensagem"></h3>
+
+                <div class="informacoes">
+                    <article>
+                        <p>Valor disponível para comprar</p>
+                        <h3 id="disponivel">R$ 0,00</h3>
+                    </article>
+
+                    <article>
+                        <p>Preço do produto</p>
+                        <h3 id="valor-produto">R$ 0,00</h3>
+                    </article>
+
+                    <article>
+                        <p>Saldo após a compra</p>
+                        <h3 id="restante">R$ 0,00</h3>
+                    </article>
+                </div>
+
+                <p id="orientacao"></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright FinanTech 2026 || Senac-RN || MedioTec-Mossoró</p>
+    </footer>
+
+    <script src="scriptPOSSOComprar.js"></script>
+</body>
+
+</html>

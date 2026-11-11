@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eaf7ee;
+}
+
+header {
+    width: 100%;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo h1 {
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #16803d;
+}
+
+header button {
+    padding: 8px 18px;
+    border: 1px solid #16803d;
+    border-radius: 5px;
+    background-color: white;
+    color: #16803d;
+    cursor: pointer;
+}
+
+.cadastrar {
+    background-color: #16803d;
+    color: white;
+    margin-left: 10px;
+}
+
+.acoes-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.usuario-logado {
+    color: #14532d;
+    font-weight: bold;
+}
+
+header button.sair {
+    margin-left: 0;
+    background-color: #16803d;
+    color: white;
+}
+
+header button.sair:hover {
+    background-color: #14532d;
+}
+
+.Login {
+    width: 400px;
+    margin: 80px auto;
+    padding: 35px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.Login h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #14532d;
+}
+
+.mensagem-login {
+    min-height: 20px;
+    margin: -12px 0 18px;
+    color: #b91c1c;
+    font-size: 14px;
+    text-align: center;
+}
+
+.Login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Login label {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.Login input[type="email"],
+.Login input[type="password"] {
+    height: 42px;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.Login input[type="submit"] {
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background-color: #16803d;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Login input[type="submit"]:hover {
+    background-color: #14532d;
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 15px 3%;
+        gap: 15px;
+    }
+
+    .inicio {
+        gap: 20px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    header button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 4%;
+    }
+
+    .inicio {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .acoes-usuario {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Login {
+        width: 90%;
+        max-width: 400px;
+        margin: 60px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px 4%;
+        gap: 15px;
+    }
+
+    .inicio {
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 12px;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .acoes-usuario {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .acoes-usuario a {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .acoes-usuario button {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .acoes-usuario a button {
+        width: 100%;
+    }
+
+    .cadastrar {
+        margin-left: 0;
+    }
+
+    .usuario-logado {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .Login {
+        width: 92%;
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 25px 20px;
+    }
+
+    .Login h2 {
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+
+    .Login label {
+        font-size: 13px;
+    }
+
+    .Login input[type="email"],
+    .Login input[type="password"] {
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .Login input[type="submit"] {
+        width: 100%;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .mensagem-login {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo h1 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 9px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .Login {
+        width: 94%;
+        padding: 20px 15px;
+        margin: 30px auto;
+    }
+
+    .Login h2 {
+        font-size: 21px;
+    }
+
+    header button {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+}
